@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C10DF3F2-5276-40BF-BE6B-D3A0FC9BDBED</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Program_1_Starter</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3D88292F9998718F8CD7B90DD1661FAA48C35E3F</key>
+		<string>github.com:Hdtran89/4443-Swift-Programming-Tran.git</string>
+		<key>8A62EDC508DD03AF1C714C974D19950828CC3E36</key>
+		<string>github.com:rugbyprof/4443-Swift-Programming.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Program-1-Starter/Program_1_Starter.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3D88292F9998718F8CD7B90DD1661FAA48C35E3F</key>
+		<string>../../..</string>
+		<key>8A62EDC508DD03AF1C714C974D19950828CC3E36</key>
+		<string>../../../../4443-Swift-Programming</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:Hdtran89/4443-Swift-Programming-Tran.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3D88292F9998718F8CD7B90DD1661FAA48C35E3F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8A62EDC508DD03AF1C714C974D19950828CC3E36</string>
+			<key>IDESourceControlWCCName</key>
+			<string>4443-Swift-Programming</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3D88292F9998718F8CD7B90DD1661FAA48C35E3F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>4443-Swift-Programming-Tran</string>
+		</dict>
+	</array>
+</dict>
+</plist>

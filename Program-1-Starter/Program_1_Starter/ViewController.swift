@@ -41,11 +41,12 @@ class ViewController: UIViewController {
     
     var totalCorrect = 0;
     
-    var colorNames : [String] = ["Red","Green","Blue","Orange","Black","White","Brown","Purple","Gray","Yellow"]
+    //var colorNames : [String] = ["Red","Green","Blue","Orange","Black","White","Brown","Purple","Gray","Yellow"]
+    var colorNames:[String] = []
     var hexColor:[UIColor] = []
     //Color dictionary type not used in the program but kept as an example for future
-    //var colorRGB : [String:String]
-   /* ["Red":0xFF0000],
+ /*   var colorRGB : [Dictionary <String,UInt>] = [
+    ["Red":0xFF0000],
     ["Green":0x00FF00],
     ["Blue":0x0000FF],
     ["Orange":0xFF7F00],
@@ -55,7 +56,8 @@ class ViewController: UIViewController {
     ["Purple":0x8968CD],
     ["Gray":0xBEBEBE],
     ["Yellow":0xFFFF00],
-    ["Gray2":0xC0C0C0] */
+    ["Gray2":0xC0C0C0]
+    ] */
     var myColors:Colors
     
     required init(coder aDecoder: NSCoder){
@@ -86,14 +88,14 @@ class ViewController: UIViewController {
                     //If we are successful, then call the method `parseJson` to load the "color class: Colors"
                     self.parseJson(json)
                     
-                    for var index:Int = 0; index < self.colorNames.count; index++ {
+                    for var index:Int = 0; index < 10; index++ {
                         var randColor = self.myColors.fetchRandomColor()
                         var hex = hexStringToUIColor(randColor.hexValue)
-                        self.colorNames[index] = randColor.colorName
-                        self.hexColor[index] = hex
-                      //  self.colorRGB["key"].append(randColor.colorName,randColor.hexValue)
-                        
+                        self.colorNames.append(randColor.colorName)
+                        self.hexColor.append(hex)
                     }
+                    
+                   // for var i:Int = 0; i < 10
                     //Start the game
                     self.matchColorLogic()
                     //Example usage of the Colors class

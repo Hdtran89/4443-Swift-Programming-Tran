@@ -21,6 +21,10 @@ extension UIColor
 }
 
 class ViewController: UIViewController , ColorTableViewControllerDelegate{
+
+//    required convenience init(coder aDecoder: NSCoder) {
+//        self.init(coder: aDecoder)
+//    }
     
     // MARK: - Declarations
     
@@ -36,8 +40,10 @@ class ViewController: UIViewController , ColorTableViewControllerDelegate{
     @IBOutlet weak var rgbLabel: UILabel!
     @IBOutlet weak var hslLabel: UILabel!
     @IBOutlet weak var hsvLabel: UILabel!
+
     
-   // var [Color] HistoryColor
+    var HistoryColor : [UIColor] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         request(.GET, "http://cs.mwsu.edu/~griffin/swift/colors2.json")
@@ -62,6 +68,7 @@ class ViewController: UIViewController , ColorTableViewControllerDelegate{
                     
                 }
         }
+
     }
     
     
@@ -93,6 +100,13 @@ class ViewController: UIViewController , ColorTableViewControllerDelegate{
         //        }
     }
     
+    func HistoryColors(color : UIColor)
+    {
+        var historyLabel = UILabel(frame : CGRectMake(0, 0, 25, 25))
+
+        historyLabel.center = CGPointMake(30, 530)
+        historyLabel.backgroundColor = color
+    }
     
     // MARK: - Protocol Implementation
     
@@ -124,7 +138,11 @@ class ViewController: UIViewController , ColorTableViewControllerDelegate{
         
         let hsl = myColors.fetchHSL(color)
         hslLabel.text = "\(hsl.H),\(hsl.S), \(hsl.L)"
+        HistoryColor.append(labelColor)
         
+        for color in HistoryColor {
+            HistoryColors(color)
+        }
         println(labelColor)
     }
     

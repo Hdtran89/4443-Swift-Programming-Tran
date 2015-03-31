@@ -58,18 +58,24 @@ class ColorTableViewController: UITableViewController {
         var color = myColors.fetchNextColor()
         let labelColor:UIColor = myColors.hexStringToUIColor(color.hexValue)
         let name = color.colorName
-        
-        println(name)
-        
         //cell.textLabel?.text = name
-        cell.detailTextLabel?.text = name
+      //  cell.textLabel?.text = name
+        cell.textLabel?.textColor = labelColor
         cell.textLabel?.backgroundColor = labelColor
+        //cell.imageView?.backgroundColor = labelColor
+
+        //println("tableviewcolor selection: \(name)")
+        //println("color hex \(color.hexValue)")
+       // cell.textLabel?.text = name
+        cell.detailTextLabel?.text = name
+
+        
         return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let cell = self.tableView.cellForRowAtIndexPath(indexPath)
-        let text = cell?.textLabel?.text
+        let text = cell?.detailTextLabel?.text
         if let text = text {
             println("did select and the text is \(text)")
             currentColor = text

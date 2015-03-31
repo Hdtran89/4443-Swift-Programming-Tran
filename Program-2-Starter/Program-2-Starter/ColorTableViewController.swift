@@ -58,15 +58,9 @@ class ColorTableViewController: UITableViewController {
         var color = myColors.fetchNextColor()
         let labelColor:UIColor = myColors.hexStringToUIColor(color.hexValue)
         let name = color.colorName
-        //cell.textLabel?.text = name
-      //  cell.textLabel?.text = name
+
         cell.textLabel?.textColor = labelColor
         cell.textLabel?.backgroundColor = labelColor
-        //cell.imageView?.backgroundColor = labelColor
-
-        //println("tableviewcolor selection: \(name)")
-        //println("color hex \(color.hexValue)")
-       // cell.textLabel?.text = name
         cell.detailTextLabel?.text = name
 
         

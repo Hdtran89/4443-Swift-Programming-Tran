@@ -37,12 +37,14 @@ class ViewController: UIViewController , ColorTableViewControllerDelegate{
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
 
+    @IBOutlet weak var history: UILabel!
     @IBOutlet weak var rgbLabel: UILabel!
     @IBOutlet weak var hslLabel: UILabel!
     @IBOutlet weak var hsvLabel: UILabel!
 
     
     var HistoryColor : [UIColor] = []
+    var LabelHistory: [UILabel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,10 +104,10 @@ class ViewController: UIViewController , ColorTableViewControllerDelegate{
     
     func HistoryColors(color : UIColor)
     {
-        var historyLabel = UILabel(frame : CGRectMake(0, 0, 25, 25))
-
-        historyLabel.center = CGPointMake(30, 530)
-        historyLabel.backgroundColor = color
+        history.text = ""
+        history.backgroundColor = color
+        LabelHistory.append(history)
+        
     }
     
     // MARK: - Protocol Implementation
@@ -134,15 +136,16 @@ class ViewController: UIViewController , ColorTableViewControllerDelegate{
     //    greenSlider.setValue(g, animated: true)
     //    blueSlider.setValue(b, animated: true)
         let hsv = myColors.fetchHSV(color)
-        hsvLabel.text = "\(hsv.H),\(hsv.S),\(hsv.V)"
+        hsvLabel.text = "\(hsv.H), \(hsv.S), \(hsv.V)"
         
         let hsl = myColors.fetchHSL(color)
-        hslLabel.text = "\(hsl.H),\(hsl.S), \(hsl.L)"
+        hslLabel.text = "\(hsl.H), \(hsl.S), \(hsl.L)"
         HistoryColor.append(labelColor)
-        
+
         for color in HistoryColor {
             HistoryColors(color)
         }
+        
         println(labelColor)
     }
     

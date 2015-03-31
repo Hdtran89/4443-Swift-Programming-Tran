@@ -71,6 +71,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=".." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMM-C4-GkX">
+                                <rect key="frame" x="33" y="519" width="21" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -86,6 +92,7 @@
                     <connections>
                         <outlet property="chosenColorLabel" destination="qMi-a1-Db4" id="LyP-Fk-gKg"/>
                         <outlet property="colorItemsLabel" destination="dlE-pD-J3P" id="egH-J6-Z6d"/>
+                        <outlet property="history" destination="DMM-C4-GkX" id="3cG-wk-DPy"/>
                         <outlet property="hslLabel" destination="qtf-au-RKf" id="i5D-kN-xvW"/>
                         <outlet property="hsvLabel" destination="2ua-T8-lyB" id="W0h-38-wo4"/>
                         <outlet property="rgbLabel" destination="3aM-rD-EAe" id="xnq-7d-ALg"/>

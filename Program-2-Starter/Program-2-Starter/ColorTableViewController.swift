@@ -53,7 +53,7 @@ class ColorTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let CellId:String = "Cell"
-        var cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier(CellId) as UITableViewCell
+        var cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier(CellId) as! UITableViewCell
         
         var color = myColors.fetchNextColor()
         let labelColor:UIColor = myColors.hexStringToUIColor(color.hexValue)

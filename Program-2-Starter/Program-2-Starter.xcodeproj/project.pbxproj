@@ -15,10 +15,10 @@
 		857CC4311AC09C6000AF61ED /* Program_2_StarterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857CC4301AC09C6000AF61ED /* Program_2_StarterTests.swift */; };
 		857CC43E1AC09CED00AF61ED /* ColorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857CC43D1AC09CED00AF61ED /* ColorTableViewController.swift */; };
 		857CC4401AC09D2000AF61ED /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857CC43F1AC09D2000AF61ED /* colors.swift */; };
-		857CC4421AC09D3F00AF61ED /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857CC4411AC09D3F00AF61ED /* SwiftyJSON.swift */; };
-		857CC4441AC09D5800AF61ED /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857CC4431AC09D5800AF61ED /* Alamofire.swift */; };
 		857CC4461AC09DDC00AF61ED /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857CC4451AC09DDC00AF61ED /* SplashController.swift */; };
 		857CC4E21AC09DFC00AF61ED /* color_wheel-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 857CC4941AC09DFC00AF61ED /* color_wheel-32.png */; };
+		E30DCCF01AFBFE390094EBEC /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30DCCEF1AFBFE390094EBEC /* Alamofire.swift */; };
+		E30DCCF21AFBFE450094EBEC /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30DCCF11AFBFE450094EBEC /* SwiftyJSON.swift */; };
 		E3ECF0461AC3BC1C006EF16A /* apple_guy_1.png in Resources */ = {isa = PBXBuildFile; fileRef = E3ECF0381AC3BC1C006EF16A /* apple_guy_1.png */; };
 		E3ECF0471AC3BC1C006EF16A /* apple_guy_2.png in Resources */ = {isa = PBXBuildFile; fileRef = E3ECF0391AC3BC1C006EF16A /* apple_guy_2.png */; };
 		E3ECF0481AC3BC1C006EF16A /* apple_guy_3.png in Resources */ = {isa = PBXBuildFile; fileRef = E3ECF03A1AC3BC1C006EF16A /* apple_guy_3.png */; };
@@ -58,10 +58,10 @@
 		857CC4301AC09C6000AF61ED /* Program_2_StarterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program_2_StarterTests.swift; sourceTree = "<group>"; };
 		857CC43D1AC09CED00AF61ED /* ColorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTableViewController.swift; sourceTree = "<group>"; };
 		857CC43F1AC09D2000AF61ED /* colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
-		857CC4411AC09D3F00AF61ED /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
-		857CC4431AC09D5800AF61ED /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
 		857CC4451AC09DDC00AF61ED /* SplashController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
 		857CC4941AC09DFC00AF61ED /* color_wheel-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "color_wheel-32.png"; sourceTree = "<group>"; };
+		E30DCCEF1AFBFE390094EBEC /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		E30DCCF11AFBFE450094EBEC /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		E3ECF0381AC3BC1C006EF16A /* apple_guy_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple_guy_1.png; sourceTree = "<group>"; };
 		E3ECF0391AC3BC1C006EF16A /* apple_guy_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple_guy_2.png; sourceTree = "<group>"; };
 		E3ECF03A1AC3BC1C006EF16A /* apple_guy_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple_guy_3.png; sourceTree = "<group>"; };
@@ -117,12 +117,14 @@
 		857CC4171AC09C6000AF61ED /* Program-2-Starter */ = {
 			isa = PBXGroup;
 			children = (
+				E30DCCF11AFBFE450094EBEC /* SwiftyJSON.swift */,
 				857CC43C1AC09C7900AF61ED /* Controllers */,
 				857CC43B1AC09C7300AF61ED /* Views */,
 				857CC43A1AC09C6B00AF61ED /* Models */,
 				857CC41A1AC09C6000AF61ED /* AppDelegate.swift */,
 				857CC4211AC09C6000AF61ED /* Images.xcassets */,
 				857CC4231AC09C6000AF61ED /* LaunchScreen.xib */,
+				E30DCCEF1AFBFE390094EBEC /* Alamofire.swift */,
 				857CC4181AC09C6000AF61ED /* Supporting Files */,
 			);
 			path = "Program-2-Starter";
@@ -159,8 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				857CC43F1AC09D2000AF61ED /* colors.swift */,
-				857CC4411AC09D3F00AF61ED /* SwiftyJSON.swift */,
-				857CC4431AC09D5800AF61ED /* Alamofire.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -319,12 +319,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				857CC4441AC09D5800AF61ED /* Alamofire.swift in Sources */,
+				E30DCCF01AFBFE390094EBEC /* Alamofire.swift in Sources */,
 				857CC41D1AC09C6000AF61ED /* ViewController.swift in Sources */,
 				857CC4401AC09D2000AF61ED /* colors.swift in Sources */,
 				857CC43E1AC09CED00AF61ED /* ColorTableViewController.swift in Sources */,
-				857CC4421AC09D3F00AF61ED /* SwiftyJSON.swift in Sources */,
 				857CC4461AC09DDC00AF61ED /* SplashController.swift in Sources */,
+				E30DCCF21AFBFE450094EBEC /* SwiftyJSON.swift in Sources */,
 				857CC41B1AC09C6000AF61ED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Program-2-Starter/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -459,6 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Program-2-Starter/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

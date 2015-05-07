@@ -79,11 +79,11 @@ class ViewController: UIViewController , ColorTableViewControllerDelegate{
         if (segue.identifier == "colorSegue") {
             
             // create a "reference" to that controller (in this case the Navigation Controller)
-            let navVC = segue.destinationViewController as UINavigationController
+            let navVC = segue.destinationViewController as! UINavigationController
             
             //Since our ColorTableViewController is embedded in the Navigation Controller, we
             //need to create a reference to it
-            let tableVC = navVC.viewControllers.first as ColorTableViewController
+            let tableVC = navVC.viewControllers.first as! ColorTableViewController
             
             //Set the "myColors" variable in the table view with our local class value
             tableVC.myColors = myColors

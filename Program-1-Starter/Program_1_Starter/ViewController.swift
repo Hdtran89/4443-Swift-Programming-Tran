@@ -343,7 +343,7 @@ class myJson {
     
     class func parseJSON(inputData: NSData) -> NSDictionary{
         var error: NSError?
-        var boardsDictionary: NSDictionary = NSJSONSerialization.JSONObjectWithData(inputData, options: NSJSONReadingOptions.MutableContainers, error: &error) as NSDictionary
+        var boardsDictionary: NSDictionary = NSJSONSerialization.JSONObjectWithData(inputData, options: NSJSONReadingOptions.MutableContainers, error: &error) as! NSDictionary
         return boardsDictionary
     }
 }
@@ -361,7 +361,7 @@ func hexStringToUIColor (hex:String) -> UIColor {
         cString = cString.substringFromIndex(advance(cString.startIndex, 1))
     }
     
-    if (countElements(cString) != 6) {
+    if (count(cString) != 6) {
         return UIColor.grayColor()
     }
     
